@@ -1,0 +1,10 @@
+.login-container {
+    background-image: url('../image/796c610da3f6d8b59a11e9447c30c3c0.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
