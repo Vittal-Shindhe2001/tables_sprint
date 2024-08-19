@@ -38,9 +38,6 @@ const Sub_ca_form = ({ handleClose,id,isEdit }) => {
     }, [dispatch])
 
     const allCategory = useSelector((state) => state.category.data) || []
-    console.log(allCategory);
-
-
     const handleChange = (e) => {
         const { name, value } = e.target
         if (name === 'category') {

@@ -91,8 +91,6 @@ export const startGetAllCategory = () => {
                             window.location.href = '/login'
                         })
                     } else {
-                        console.log(category.data)
-
                         dispatch(set_Allcategory(category.data))
                     }
                 } catch (error) {
@@ -163,8 +161,6 @@ export const set_deleted_category = (data) => {
 }
 
 export const startDeleteCategory = (id) => {
-    console.log(id);
-
     return async (dispatch) => {
         try {
             const response = await axios.delete(`/category/${id}`, {

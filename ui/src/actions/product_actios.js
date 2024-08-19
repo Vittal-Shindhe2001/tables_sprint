@@ -46,8 +46,6 @@ export const startAddproduct = (formdat, handleClose, resetForm) => {
                         })
                     }
                 } catch (error) {
-                    console.log(error);
-
                     Swal.fire({
                         title: 'Error',
                         text: 'There was a problem adding the Product. Please try again.',
@@ -93,8 +91,6 @@ export const set_update_product = (data) => {
 }
 
 export const startUpdateProduct = (id,formData, handleClose, resetForm) => {
-    console.log(formData);
-    
     return (dispatch) => {
         (
             async () => {

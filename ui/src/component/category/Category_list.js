@@ -22,7 +22,6 @@ const Category_list = () => {
     dispatch(startGetAllCategory())
   }, [dispatch])
   const data = useSelector((state) => state.category.data) || []
-  console.log(data);
   const handleEdit = (data) => {
     setEditData(data)
     setShowEditModal(!showEditModal)
