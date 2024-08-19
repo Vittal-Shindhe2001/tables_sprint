@@ -21,8 +21,6 @@ const validationSchema = Yup.object({
 });
 
 const Edit_product = ({ handleClose, data }) => {
-    console.log(data);
-
     const dispatch = useDispatch();
 
     useEffect(() => {

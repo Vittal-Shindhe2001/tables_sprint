@@ -13,8 +13,6 @@ export const set_error = (data) => {
 
 // regisetr user
 export const startRegisterUser = (formdata, reset) => {
-    console.log(formdata);
-
     return (dispatch) => {
         (
             async () => {
@@ -32,7 +30,7 @@ export const startRegisterUser = (formdata, reset) => {
                         window.location.href = '/login'
                     })
                 } catch (error) {
-                    console.log(error);
+                    
                     Swal.fire({
                         title: 'Error!',
                         text: 'Registration failed. Please try again.',
@@ -50,8 +48,6 @@ export const startLoginUser = (formdata) => {
             async () => {
                 try {
                     const user = await axios.post('/login', formdata)
-                    console.log(user);
-
                     Swal.fire({
                         title: 'Success!',
                         text: 'Login successful. Redirecting to Home...',
@@ -108,8 +104,6 @@ export const startGetUserInfo = () => {
 
 //forgot password 
 export const startForgotPassword = (email, handleClose, setButtonDisable) => {
-    console.log(email);
-
     return (dispatch) => {
         (
             async () => {
@@ -129,8 +123,6 @@ export const startForgotPassword = (email, handleClose, setButtonDisable) => {
                         text: error.message,
                         icon: "error"
                     })
-                    console.log(error);
-
                 }
             }
         )()

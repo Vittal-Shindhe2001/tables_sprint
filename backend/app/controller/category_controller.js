@@ -1,4 +1,4 @@
-const { error } = require('console');
+
 const Category = require('../models/category_module');
 const Product = require('../models/product');
 const SubCategory = require('../models/sub_category_module');
@@ -67,7 +67,7 @@ category_controller.getById = async (req, res) => {
 // Update a category
 category_controller.update = async (req, res) => {
     try {
-        console.log(req.body);
+        (req.body);
 
         const updatedCategory = await Category.findByIdAndUpdate(
             req.params.id,

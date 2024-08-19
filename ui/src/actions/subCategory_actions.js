@@ -29,8 +29,6 @@ export const startAddSubCategory = (formdat, reset, handleShow) => {
         (
             async () => {
                 try {
-                    console.log(formdat);
-
                     const subCategory = await axios.post('/sub-category', formdat, {
                         headers: {
                             'Content-Type': 'multipart/form-data',

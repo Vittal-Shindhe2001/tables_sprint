@@ -64,7 +64,7 @@ product_controller.getById = async (req, res) => {
 // Update a product
 product_controller.update = async (req, res) => {
     try {
-        console.log(req.body);
+        (req.body);
         
         const updatedProduct = await Product.findByIdAndUpdate(
             req.params.id,

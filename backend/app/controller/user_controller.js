@@ -137,7 +137,7 @@ user_controller.handleResetPassword = async (req, res) => {
 
 // user_controller.resetpassword = async (req, res) => {
 //     const { token } = req.params
-//     // console.log(token)
+//     // (token)
 
 //     try {
 //         const user = await User.findOne({
@@ -158,7 +158,7 @@ user_controller.handleResetPassword = async (req, res) => {
 // user_controller.resetpassword = async (req, res) => {
 //     const { token } = req.params
 //     const { newPassword } = req.body
-//     console.log(token)
+//     (token)
 
 
 //     try {
